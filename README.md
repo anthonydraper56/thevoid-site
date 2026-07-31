@@ -5,6 +5,7 @@ Static site. Three files, no build step.
 - index.html — landing page
 - archive.html — every issue + contents
 - books.html — books
+- submit.html — submission guidelines
 
 ## Deploying (GitHub + Vercel)
 
