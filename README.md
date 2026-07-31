@@ -1,6 +1,6 @@
 # The Void — website
 
-Static site. Three files, no build step.
+Static site.
 
 - index.html — landing page
 - archive.html — every issue + contents
@@ -18,4 +18,4 @@ Every push to `main` redeploys automatically.
 
 ## Updating each quarter
 
-Ask Claude to update the source design files, re-bundle, and replace these three files in the repo (GitHub web UI: "Add file → Upload files", overwrite, commit). Vercel redeploys in ~30 seconds.
+Update the source design files, re-bundle, and replace these three files in the repo (GitHub web UI: "Add file → Upload files", overwrite, commit). Vercel redeploys in ~30 seconds.
