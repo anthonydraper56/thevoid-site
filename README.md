@@ -1,29 +1,17 @@
-# The Void — website
+# The Void — website (textured edition, 10 Nov 2026)
 
-Static site. Three files, no build step.
+Static site. No build step, no JavaScript framework.
 
-- index.html — landing page
-- archive.html — every issue + contents
-- books.html — books
-- submit.html — submission guidelines
+- index.html, about.html, archive.html, books.html, submit.html — the five pages
+- base.css — base tokens; texture.css — paper, type, stamps, and seasonal ephemera (shared by every page)
+- uploads/ — fonts, textures, covers, portraits
+- favicon.png, og.png
 
-## Deploying (GitHub + Vercel)
+## Deploying
 
-1. Create a new GitHub repo (e.g. `thevoid-site`) and upload these files to the repo root.
-2. Go to vercel.com, "Add New… → Project", import the repo.
-3. Framework preset: **Other**. Leave build command and output directory empty. Deploy.
-4. Add your domain under Project → Settings → Domains, and follow the DNS instructions.
+Upload everything in this folder, folders included, to the repo root (GitHub web UI: "Add file → Upload files", drag the whole folder contents in, commit). The pages expect `uploads/`, `base.css`, and `texture.css` to sit beside them.
 
-Every push to `main` redeploys automatically.
+## Each issue
 
-## Updating each quarter
-
-Ask Claude to update the source design files, re-bundle, and replace these three files in the repo (GitHub web UI: "Add file → Upload files", overwrite, commit). Vercel redeploys in ~30 seconds.
-
-## Share previews (Open Graph)
-
-Each page carries its own `<title>`, description, favicon, and Open Graph / Twitter card tags pointing at `og.png`. These use absolute URLs on `https://welcometothevoid.net` — if the live domain changes, the `og:*` URLs in each HTML file must be updated to match, or link previews will break.
-
-`og.png` (1200×630) and `favicon.png` must sit in the repo root alongside the HTML files.
-
-Caching: X, iMessage, Slack, and Substack cache previews aggressively. After deploying, re-scrape with a debugger (e.g. cards-dev.twitter.com/validator, developers.facebook.com/tools/debug) or append `?v=2` to the URL once to force a fresh fetch.
+- Seasonal ephemera: replace the six files in `uploads/texture/season/` (ephemera-1.png … ephemera-6.png). Same names, every page picks them up.
+- Contents and contributors live in the page HTML (archive.html, index.html "In this issue", about.html credits).
