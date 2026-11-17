@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editorial Services — The Void</title>
+<meta name="description" content="Editorial services from The Void: three readings, two manuscripts a month.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Void">
+<meta property="og:title" content="Editorial Services — The Void">
+<meta property="og:description" content="Editorial services from The Void: three readings, two manuscripts a month.">
+<meta property="og:url" content="https://welcometothevoid.net/editorial.html">
+<meta property="og:image" content="https://welcometothevoid.net/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="texture.css">
+<style>
+  @media (max-width: 1180px) { .strapline { display: none; } }
+  #rotate-hint { display: none; }
+  @media (max-width: 860px) and (orientation: portrait) { #rotate-hint { display: flex; } }
+  .name-btn:hover, .name-btn:focus-visible { color: var(--ink-red); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="paper-page" id="rotate-hint" style="position:fixed;inset:0;z-index:9999;flex-direction:column;justify-content:center;padding:40px 28px;gap:18px">
+  <p class="kicker" style="font-size:16px;text-transform:uppercase;margin:0">The Void</p>
+  <h2 class="inked" style="font-size:40px;line-height:0.95;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;margin:0;border-top:3px double var(--rule);border-bottom:3px double var(--rule);padding:16px 0">Turn your phone sideways</h2>
+  <p class="roman" style="font-size:17px;line-height:1.5;margin:0;max-width:34ch;text-wrap:pretty">This page is set on a wide grid. Rotate to landscape for the intended reading experience.</p>
+</div>
+
+<div class="paper-page">
+  <header class="masthead" style="position:sticky;top:0;z-index:20">
+    <div style="max-width:1180px;margin:0 auto;padding:16px 40px;display:flex;align-items:baseline;gap:32px">
+      <img src="uploads/opt/void-mark-96.png" alt="The Void" style="width:34px;height:auto;flex:none;align-self:center;margin-right:-20px"><a class="inked" href="index.html" style="font-weight:800;font-size:23px;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;color:var(--ink);text-decoration:none;white-space:nowrap;flex:none">The Void</a>
+      <span class="label strapline" style="font-size:14px;text-transform:uppercase;flex:none;white-space:nowrap">Quarterly · Print only · Est. 2023</span>
+      <nav style="margin-left:auto;display:flex;flex-wrap:wrap;justify-content:flex-end;row-gap:8px;column-gap:22px;flex:none">
+        <a class="nav-link" href="about.html" style="color:var(--ink)">About</a>
+        <a class="nav-link" href="archive.html" style="color:var(--ink)">Archive</a>
+        <a class="nav-link" href="books.html" style="color:var(--ink)">Books</a>
+        <a class="nav-link" href="submit.html" style="color:var(--ink)">Submit</a>
+        <a class="nav-link" href="editorial.html" aria-current="page" style="color:var(--ink-red)">Editorial</a>
+        <a class="nav-link" href="index.html#subscribe-a" style="color:var(--ink)">Subscribe</a>
+        <span style="width:2px;height:13px;align-self:center;background:var(--rule);flex:none"></span>
+        <button type="button" class="nav-link" data-open-club style="background:none;border:0;padding:0;color:var(--ink);cursor:pointer;white-space:nowrap;flex:none">Book Club</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="club" hidden role="dialog" aria-modal="true" aria-label="Anti-Bummer Book Club" style="position:fixed;inset:0;background:rgba(32,30,29,0.55);z-index:60;display:flex;align-items:center;justify-content:center;padding:24px">
+      <div style="background:#f3dc5c url('uploads/texture/grain.png') 0 0 / 240px 240px;color:var(--ink);width:400px;max-width:100%;padding:34px 32px 30px;box-shadow:0 18px 40px rgba(32,30,29,0.35);transform:rotate(-1.5deg);position:relative">
+        <button type="button" data-close-club aria-label="Close" style="position:absolute;top:10px;right:12px;background:none;border:0;font-family:var(--font-heading);font-size:20px;line-height:1;cursor:pointer;color:var(--color-text);padding:4px">×</button>
+        <p class="label" style="font-size:14px;text-transform:uppercase;margin:0 0 14px">Anti-Bummer Book Club</p>
+        <p class="roman" style="font-size:18px;line-height:1.5;margin:0 0 22px;text-wrap:pretty">The Void partners with Anti-Bummer Club to present the Anti-Bummer Book Club. Click below for details, which will take you to the Anti-Bummer Club website.</p>
+        <a class="btn btn-primary" href="https://www.antibummerclub.com" target="_blank" rel="noopener" style="font-size:17px;padding:12px 18px">Take me there!</a>
+      </div>
+    </div>
+
+  <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+    <section style="padding:72px 0 48px;position:relative;border-bottom:3px double var(--rule);display:grid;grid-template-columns:1fr 440px;gap:56px;align-items:end">
+      <div>
+        <p class="kicker" style="font-size:16px;text-transform:uppercase;margin:0 0 20px">Two manuscripts a month</p>
+        <h1 class="inked" style="font-size:96px;line-height:0.88;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;text-transform:uppercase;margin:0">Editorial<br>Services</h1>
+      </div>
+      <img class="stamp" src="uploads/texture/postmark-red.png" alt="" aria-hidden="true" style="width:140px;left:470px;top:40px;transform:rotate(-12deg);opacity:0.85">
+      <img class="eph eph-r" src="uploads/texture/season/ephemera-1.png" alt="" aria-hidden="true" style="width:230px;right:-190px;top:-20px">
+      <div style="display:flex;flex-direction:column;gap:22px;align-items:flex-start;margin:0 0 8px">
+        <p class="bio" style="font-size:22px;line-height:1.45;margin:0">We take two manuscripts a month. Each is read in full, on paper, by one editor, start to finish.</p>
+        <p class="sold-out" style="display:inline-block;font-size:18px;margin:0">Next opening: write to ask</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="readings" style="padding:60px 0 64px;position:relative;border-bottom:3px double var(--rule)">
+      <img class="eph eph-l" src="uploads/texture/season/ephemera-2.png" alt="" aria-hidden="true" style="width:170px;left:-210px;top:120px;transform:rotate(-18deg)">
+      <div style="display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;margin:0 0 36px">
+        <h2 id="readings" class="inked" style="font-size:44px;line-height:0.95;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;margin:0">Three readings</h2>
+        <p class="label" style="font-size:16px;margin:0">Priced by length · up to 3,000 · 3,001–7,500 · 7,501–12,000 words</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:30px;align-items:stretch">
+
+        <article class="paste-label tier-card" style="transform:rotate(-0.6deg)">
+          <p class="tier-num inked">I</p>
+          <h3 class="inked tier-name">Reader’s Letter</h3>
+          <p class="roman tier-desc">A full read and an editorial letter.</p>
+          <dl class="rate-card">
+            <div><dt>Up to 3,000 words</dt><dd>$125</dd></div>
+            <div><dt>3,001–7,500 words</dt><dd>$200</dd></div>
+            <div><dt>7,501–12,000 words</dt><dd>$275</dd></div>
+          </dl>
+          <a class="btn btn-secondary tier-btn" href="mailto:drapera@me.com?subject=Editorial%20Services%20-%20Reader%27s%20Letter">Ask about a slot</a>
+        </article>
+
+        <article class="paste-label tier-card" style="transform:rotate(0.5deg)">
+          <p class="tier-num inked">II</p>
+          <h3 class="inked tier-name">Marginalia</h3>
+          <p class="roman tier-desc">The editorial letter, plus your manuscript marked by hand.</p>
+          <dl class="rate-card">
+            <div><dt>Up to 3,000 words</dt><dd>$250</dd></div>
+            <div><dt>3,001–7,500 words</dt><dd>$400</dd></div>
+            <div><dt>7,501–12,000 words</dt><dd>$550</dd></div>
+          </dl>
+          <a class="btn btn-secondary tier-btn" href="mailto:drapera@me.com?subject=Editorial%20Services%20-%20Marginalia">Ask about a slot</a>
+        </article>
+
+        <article class="paste-label tier-card" style="transform:rotate(-0.3deg)">
+          <img class="stamp" src="uploads/texture/seal-b.png" alt="" aria-hidden="true" style="width:104px;right:-34px;top:-40px;transform:rotate(12deg);opacity:0.8">
+          <p class="tier-num inked">III</p>
+          <h3 class="inked tier-name">The Conversation</h3>
+          <p class="roman tier-desc">Everything in Marginalia, followed by an hour with your editor over video, a week after your letter and pages arrive. Bring your questions, your disagreements, and the revision you’re considering. Some things about a piece only come out when two people talk about it.</p>
+          <dl class="rate-card">
+            <div><dt>Up to 3,000 words</dt><dd>$375</dd></div>
+            <div><dt>3,001–7,500 words</dt><dd>$550</dd></div>
+            <div><dt>7,501–12,000 words</dt><dd>$725</dd></div>
+          </dl>
+          <a class="btn btn-primary tier-btn" href="mailto:drapera@me.com?subject=Editorial%20Services%20-%20The%20Conversation">Ask about a slot</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="how" style="padding:56px 0;position:relative;border-bottom:3px double var(--rule);display:grid;grid-template-columns:300px 1fr;gap:56px">
+      <img class="eph eph-r" src="uploads/texture/season/ephemera-3.png" alt="" aria-hidden="true" style="width:130px;right:-170px;top:60px;transform:rotate(24deg)">
+      <h2 id="how" class="inked" style="font-size:44px;line-height:0.95;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;margin:0">How it works</h2>
+      <ol class="docket">
+        <li><span class="docket-n">01</span><span class="roman">Slots open by month. When you write to us, we’ll tell you the next month with room.</span></li>
+        <li><span class="docket-n">02</span><span class="roman">Your slot is held once the fee is paid.</span></li>
+        <li><span class="docket-n">03</span><span class="roman">Your piece is read in full, on paper, by one editor, start to finish.</span></li>
+        <li><span class="docket-n">04</span><span class="roman">For The Conversation, your hour with your editor comes a week after your letter and pages arrive.</span></li>
+      </ol>
+    </section>
+
+    <section style="padding:56px 0;border-bottom:3px double var(--rule)">
+      <div class="marble-panel">
+        <div class="paste-label" style="padding:44px 44px 42px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
+          <img class="stamp" src="uploads/texture/important.png" alt="" aria-hidden="true" style="width:180px;right:-30px;top:-36px;transform:rotate(7deg);opacity:0.9">
+          <h2 class="inked" style="font-size:52px;line-height:0.92;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;margin:0;color:var(--ink)">A submission<br>is not a<br>paid read</h2>
+          <p class="roman" style="font-size:19px;line-height:1.55;margin:0;text-wrap:pretty">A submission to The Void receives a decision, not a critique. If we accept a piece, we may suggest light edits before it goes to print. Everything offered here goes further than that: a full letter, a marked manuscript, a conversation. None of it bears on whether we publish your work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:64px 0 88px;position:relative;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+      <img class="stamp" src="uploads/texture/rubber-stamp.png" alt="" aria-hidden="true" style="width:150px;right:20px;top:30px;transform:rotate(8deg);mix-blend-mode:normal;opacity:0.95">
+      <img class="eph eph-r" src="uploads/texture/season/ephemera-5.png" alt="" aria-hidden="true" style="width:200px;right:-220px;top:120px;transform:rotate(-8deg)">
+      <h2 class="inked" style="font-size:52px;line-height:0.92;text-transform:uppercase;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;margin:0">Reserve a reading</h2>
+      <p class="roman" style="font-size:19px;line-height:1.6;max-width:56ch;margin:0;text-wrap:pretty">Slots open by month. When you write to us, we’ll tell you the next month with room.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn btn-primary" href="mailto:drapera@me.com?subject=Editorial%20Services" style="font-size:20px;padding:18px 26px">Write to us</a>
+        <a class="btn btn-secondary" href="submit.html" style="font-size:20px;padding:18px 26px">Submitting instead?</a>
+      </div>
+    </section>
+  </div>
+
+  <footer style="position:relative;border-top:3px double var(--rule)">
+    <div class="label" style="max-width:1180px;margin:0 auto;padding:32px 40px;display:flex;align-items:baseline;gap:26px;font-size:15px;text-transform:uppercase">
+      <img src="uploads/opt/void-mark-96.png" alt="" style="width:26px;height:auto;flex:none;align-self:center;margin-right:-14px"><a class="inked" href="index.html" style="font-weight:800;color:var(--ink);font-size:16px;font-family:'Void Display',var(--font-heading);letter-spacing:-0.005em;text-decoration:none">The Void</a>
+      <a href="about.html" style="color:#57524c;text-decoration:none">About</a>
+      <a href="archive.html" style="color:#57524c;text-decoration:none">Archive</a>
+      <a href="books.html" style="color:#57524c;text-decoration:none">Books</a>
+      <a href="submit.html" style="color:#57524c;text-decoration:none">Submit</a>
+      <a href="editorial.html" style="color:#57524c;text-decoration:none">Editorial</a>
+      <img class="eph eph-r" src="uploads/texture/season/ephemera-6.png" alt="" aria-hidden="true" style="width:120px;right:-160px;top:-40px;transform:rotate(12deg)">
+      <span style="margin-left:auto">welcometothevoid.net — © 2026</span>
+    </div>
+  </footer>
+</div>
+<script>
+(function () {
+  // Book Club card
+  var club = document.getElementById('club');
+  document.querySelectorAll('[data-open-club]').forEach(function (b) { b.addEventListener('click', function () { club.hidden = false; club.querySelector('[data-close-club]').focus(); }); });
+  document.querySelectorAll('[data-close-club]').forEach(function (b) { b.addEventListener('click', function () { club.hidden = true; }); });
+  club.addEventListener('click', function (e) { if (e.target === club) club.hidden = true; });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') club.hidden = true; });
+})();
+</script>
+</body>
+</html>

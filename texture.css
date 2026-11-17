@@ -110,3 +110,18 @@
   .ink-strip span { font-family: "Void Wood", Georgia, serif; }
   a.label { color: var(--ink-red); }
   a.label:hover { color: #7c1405; }
+
+  /* editorial services: tier cards, rate card, docket */
+  .tier-card { display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 28px; }
+  .tier-num { font-family: "Void Display", var(--font-heading); font-size: 64px; line-height: 0.9; color: var(--ink-red); margin: 0; }
+  .tier-name { font-family: "Void Display", var(--font-heading); font-size: 34px; line-height: 0.95; text-transform: uppercase; letter-spacing: -0.005em; margin: 0; padding-bottom: 12px; border-bottom: 3px double var(--rule); }
+  .tier-desc { font-size: 18px; line-height: 1.5; margin: 0; text-wrap: pretty; flex: 1; }
+  .rate-card { margin: 4px 0 0; border-top: 1px solid var(--rule); }
+  .rate-card div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 9px 0 8px; border-bottom: 1px dotted var(--rule); }
+  .rate-card dt { font-family: "Void Gothic", "Archivo", sans-serif; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: #57524c; }
+  .rate-card dd { margin: 0; font-family: "Void Display", var(--font-heading); font-size: 26px; line-height: 1; }
+  .tier-btn { align-self: flex-start; margin-top: 8px; font-size: 16px; padding: 11px 16px 10px; }
+  .docket { list-style: none; margin: 0; padding: 0; border-top: 3px double var(--rule); }
+  .docket li { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: baseline; padding: 16px 0 14px; border-bottom: 1px dotted var(--rule); }
+  .docket-n { font-family: "Void Display", var(--font-heading); font-size: 30px; line-height: 1; color: var(--ink-red); }
+  .docket .roman { font-size: 19px; line-height: 1.5; text-wrap: pretty; }

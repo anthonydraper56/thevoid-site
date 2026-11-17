@@ -1,8 +1,8 @@
-# The Void — website (textured edition, 10 Nov 2026)
+# The Void — website (textured edition, 10 Nov 2026; Editorial page added 17 Nov 2026)
 
 Static site. No build step, no JavaScript framework.
 
-- index.html, about.html, archive.html, books.html, submit.html — the five pages
+- index.html, about.html, archive.html, books.html, submit.html, editorial.html — the six pages
 - base.css — base tokens; texture.css — paper, type, stamps, and seasonal ephemera (shared by every page)
 - uploads/ — fonts, textures, covers, portraits
 - favicon.png, og.png
