@@ -1,4 +1,4 @@
-# The Void — website (textured edition, 10 Nov 2026; Editorial page added 17 Nov 2026)
+# The Void — website (textured edition with Editorial Services, 17 Nov 2026)
 
 Static site. No build step, no JavaScript framework.
 
