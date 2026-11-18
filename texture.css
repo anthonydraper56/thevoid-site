@@ -7,7 +7,9 @@
   :root { --paper: #efe7d6; --ink: #201e1d; --ink-red: #a81a04; --rule: rgba(32,30,29,0.6); }
 
   /* paper ground, with grain laid over everything */
-  .paper-page { min-height: 100vh; color: var(--ink); position: relative; overflow-x: clip; isolation: isolate;
+  .paper-page { min-height: 100vh; color: var(--ink); position: relative; isolation: isolate; max-width: 1300px; border-radius: 2px;
+    margin: clamp(18px, 4vw, 56px) auto clamp(28px, 6vw, 88px);
+    box-shadow: 0 0 0 1px rgba(30,20,10,0.22), 0 10px 24px rgba(0,0,0,0.35), 0 40px 90px -20px rgba(0,0,0,0.6);
     background: var(--paper) url("uploads/texture/paper.jpg") center top / 1400px auto repeat; }
   .paper-page::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 55;
     background: url("uploads/texture/grain.png") 0 0 / 240px 240px; opacity: 0.3; mix-blend-mode: multiply; }
@@ -70,7 +72,13 @@
   }
   a { color: var(--ink-red); }
   a:hover { color: #7c1405; }
-  body { background: var(--paper); }
+  /* the table the sheet lies on: a walnut tabletop (ambientCG Wood060, CC0), tiled at its natural size,
+     on a fixed layer so it stays still while the paper scrolls */
+  html { background: #3a2619; }
+  body { overflow-x: clip; background: transparent; }
+  body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background: #3a2619 url("uploads/texture/wood-table.jpg") center top / 1024px 1024px repeat; }
+  #rotate-hint.paper-page { max-width: none; margin: 0; box-shadow: none; }
 
   /* shared additions for the other pages */
   .roman { font-family: "Void Roman", Georgia, serif; }
